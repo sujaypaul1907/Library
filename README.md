@@ -56,10 +56,14 @@ HTML, CSS, Javascript and Bootstrap for User interface.
 
 ## Project Interface Images
 
-
+- **Home Page**: 
 ![HomePage](https://github.com/sujaypaul1907/Library/blob/main/Library/static/homepage.png)
+- **Members List**: 
 ![MembersList](https://github.com/sujaypaul1907/Library/blob/main/Library/static/member_list.png)
+- **Book List**: 
 ![BookList](https://github.com/sujaypaul1907/Library/blob/main/Library/static/book_list.png)
+- **Profile**: 
 ![Profile](https://github.com/sujaypaul1907/Library/blob/main/Library/static/profile.png)
+- **Add Book**: 
 ![AddBook](https://github.com/sujaypaul1907/Library/blob/main/Library/static/add_book.png)
 
