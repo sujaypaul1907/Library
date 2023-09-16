@@ -1,0 +1,57 @@
+{% extends 'admin_navbar.html' %}
+{% load static %}
+{% block title %} Library Management System {% endblock %}
+{% block css %}
+{% endblock %}
+{% block body %}
+<div class="col-md-12">
+    <form method="POST" class="post-form" action="/update/{{ update_book.id }}">  
+    {% csrf_token %}  
+    <div class="container">   
+        <div class="col-12">    
+            <h3>Update Book Details</h3>  
+        </div> 
+
+
+        <div class="row mt-4">
+            <div class="form-group col-md-12">
+                <label><i style="font-weight: bold;">Book Name</i></label>
+                <input type="text" class="form-control mt-2" name="name" id="myid_name" value="{{ update_book.name }}">
+            </div>
+        </div>
+    
+        <div class="row mt-4">
+            <div class="form-group col-md-12">
+                <label><i style="font-weight: bold;">Author Name</i></label>
+                <input type="text" class="form-control mt-2" name="author" id="myid_author" value="{{ update_book.author }}">
+            </div>
+        </div>
+    
+        <div class="row mt-4">
+            <div class="form-group col-md-12">
+                <label><i style="font-weight: bold;">Book Fee</i></label>
+                <input type="number" class="form-control mt-2" name="fees" id="myid_fees" value="{{ update_book.fees }}">
+            </div>
+        </div>
+    
+        <div class="row mt-4">
+            <div class="form-group col-md-12">
+                <label><i style="font-weight: bold;">Quantity</i></label>
+                <input type="number" class="form-control mt-2" name="quantity" id="myid_quantity" value="{{ update_book.quantity }}">
+            </div>
+        </div>
+        <br>
+
+        <button type="submit" class="btn btn-success btn-lg">Update</button>
+    </div>
+ 
+    </form>  
+{% endblock %}   
+{% block js %}
+<script>
+    {% if alert %}
+    alert("Book is updated successfully.")
+    document.location = "/view_books"
+    {% endif %}
+</script>
+{% endblock %}

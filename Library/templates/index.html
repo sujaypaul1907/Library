@@ -1,0 +1,40 @@
+{% extends 'basic.html' %}
+
+{% load static %}
+
+{% block title %} 
+
+Library Management System 
+
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+  
+{% block body %}
+<div class="p-4 bg-light">
+    <div class="container-fluid py-3">
+      <h1 class="display-5 fw-bold"><center>Welcome to the Library</center></h1>
+      <center><p class="col-md-8 fs-4">You can register as member. You will be able to issue any book thorugh the admin. After that you need to return the book within 30 days or else a fine of Rs 50 will be charged per day till the book is returned.</p></center>
+      
+      <center><a href="/member_registration/" class="btn btn-primary btn-lg">Register as Member</a></center>
+    </div>
+    <br>
+    <div class="container">
+  <div class="row">
+
+    <div class="col-lg-6">
+      <center><img src="{% static 'admin.jpg' %}" width="50%" alt=""><br><br></center>
+        <center><a class="btn btn-outline-primary btn-lg" style="text-align:center" href="/admin_login/">Admin</a></center>
+    </div>
+
+    <div class="col-lg-6">
+    <center><img src="{% static 'members.jpg' %}" width="50%" alt=""><br><br></center>
+    <center><a class="btn btn-outline-primary btn-lg" href="/member_login/">Member</a></center>
+    </div>
+  </div>
+  </div>
+</div>
+
+{% endblock %}
