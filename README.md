@@ -54,3 +54,6 @@ http://sujaypaul.pythonanywhere.com/
 Python Scripting Language and Django Framework used in building the Library Management System.
 HTML, CSS, Javascript and Bootstrap for User interface.
 
+
+![Admin](https://github.com/sujaypaul1907/Library/blob/main/Library/static/admin.jpg)
+
